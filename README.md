@@ -30,6 +30,8 @@ This application requires environment variables for API keys and sensitive infor
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
+**IMPORTANT: Never commit `.env` files with real API keys to the repository. Our `.gitignore` is configured to exclude these files.**
+
 ### Frontend
 
 ```bash
@@ -57,9 +59,25 @@ python app.py
 
 ## Deployment
 
-When deploying this application, make sure to set up environment variables in your hosting platform (e.g., Vercel) for:
+### Vercel Deployment
 
-- `GOOGLE_API_KEY`
+When deploying this application to Vercel, you need to configure environment variables in the Vercel dashboard:
+
+1. Sign in to your Vercel account
+2. Select your project
+3. Go to "Settings" > "Environment Variables"
+4. Add the following variable:
+   - `GOOGLE_API_KEY`: Your Google Gemini API key
+
+### Handling Secrets Securely
+
+To keep your API keys and other sensitive information secure:
+
+1. Never hardcode API keys in your code
+2. Use environment variables for all sensitive information
+3. For local development, use `.env` files that are not committed to Git
+4. For production, use the environment variable settings provided by your hosting platform
+5. Regularly rotate your API keys, especially if you suspect they might be compromised
 
 ## License
 
