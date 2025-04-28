@@ -1,0 +1,17 @@
+SpeechRecognition
+pipwin
+pyaudio
+gTTS
+google-generativeai
+python-dotenv
+streamlit
+PyPDF2
+langdetect
+flask
+flask-cors
+pdf2image
+pytesseract
+Pillow
+backoff
+
+-e .

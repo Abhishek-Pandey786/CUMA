@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Blue background -->
+  <rect width="400" height="400" fill="#0F4C91" />
+  
+  <!-- Sound wave icon -->
+  <g fill="#30D5F2">
+    <!-- Left dot -->
+    <circle cx="260" cy="150" r="12" />
+    <!-- Right dot -->
+    <circle cx="140" cy="150" r="12" />
+    
+    <!-- Left arc waves -->
+    <path d="M 160,150 A 40,40 0 0 1 240,150" stroke="#30D5F2" stroke-width="8" fill="none" />
+    <path d="M 180,150 A 20,20 0 0 1 220,150" stroke="#30D5F2" stroke-width="8" fill="none" />
+    
+    <!-- Right arc waves -->
+    <path d="M 280,150 A 60,60 0 0 0 120,150" stroke="#30D5F2" stroke-width="8" fill="none" />
+    <path d="M 300,150 A 80,80 0 0 0 100,150" stroke="#30D5F2" stroke-width="6" fill="none" />
+  </g>
+  
+  <!-- CUMA text -->
+  <text x="200" y="275" fill="#30D5F2" font-family="Arial, sans-serif" font-weight="bold" font-size="80" text-anchor="middle">CUMA</text>
+  
+  <!-- Tagline -->
+  <text x="200" y="320" fill="#30D5F2" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">BREAK LANGUAGE BARRIERS WITH AI</text>
+</svg> 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CUMA - Favicon Preview</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #0F4C91;
+    }
+    .favicon-preview {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 30px 0;
+      align-items: center;
+    }
+    .browser-tab {
+      border: 1px solid #ddd;
+      border-radius: 8px 8px 0 0;
+      padding: 8px 15px;
+      background: #f7f7f7;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .favicon {
+      width: 16px;
+      height: 16px;
+    }
+    .instructions {
+      background: #e9f5ff;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 20px 0;
+      border-left: 4px solid #0F4C91;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CUMA Favicon Preview</h1>
+    
+    <div class="instructions">
+      <h3>Live Favicon Preview</h3>
+      <p>This page is using the SVG favicon directly. Check the browser tab above to see how it looks!</p>
+      <p>When you're happy with the design, use the converter tool to generate the actual icons.</p>
+    </div>
+
+    <div class="favicon-preview">
+      <div>
+        <h3>Browser Tab Preview:</h3>
+        <div class="browser-tab">
+          <svg class="favicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+            <!-- Blue background -->
+            <rect width="192" height="192" fill="#0F4C91" />
+            
+            <!-- Sound wave icon centered -->
+            <g fill="#30D5F2" transform="translate(16, 16) scale(0.8)">
+              <!-- Left dot -->
+              <circle cx="140" cy="96" r="12" />
+              <!-- Right dot -->
+              <circle cx="60" cy="96" r="12" />
+              
+              <!-- Left arc waves -->
+              <path d="M 80,96 A 35,35 0 0 1 120,96" stroke="#30D5F2" stroke-width="8" fill="none" />
+              
+              <!-- Right arc waves -->
+              <path d="M 160,96 A 55,55 0 0 0 40,96" stroke="#30D5F2" stroke-width="8" fill="none" />
+              <path d="M 180,96 A 75,75 0 0 0 20,96" stroke="#30D5F2" stroke-width="6" fill="none" />
+            </g>
+          </svg>
+          <span>CUMA - Multilingual AI Assistant</span>
+        </div>
+      </div>
+    </div>
+
+    <p>To see the real favicon in action, this page has it set as its own favicon. Look at your browser tab!</p>
+  </div>
+
+  <script>
+    // Set the favicon for this page
+    const setFavicon = () => {
+      const svgString = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+        <rect width="192" height="192" fill="#0F4C91" />
+        <g fill="#30D5F2" transform="translate(16, 16) scale(0.8)">
+          <circle cx="140" cy="96" r="12" />
+          <circle cx="60" cy="96" r="12" />
+          <path d="M 80,96 A 35,35 0 0 1 120,96" stroke="#30D5F2" stroke-width="8" fill="none" />
+          <path d="M 160,96 A 55,55 0 0 0 40,96" stroke="#30D5F2" stroke-width="8" fill="none" />
+          <path d="M 180,96 A 75,75 0 0 0 20,96" stroke="#30D5F2" stroke-width="6" fill="none" />
+        </g>
+      </svg>`;
+      
+      const favicon = document.createElement('link');
+      favicon.rel = 'icon';
+      favicon.type = 'image/svg+xml';
+      favicon.href = 'data:image/svg+xml;base64,' + btoa(svgString);
+      document.head.appendChild(favicon);
+    };
+    
+    // Initialize
+    window.onload = setFavicon;
+  </script>
+</body>
+</html> 

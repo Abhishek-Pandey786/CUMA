@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Blue background -->
+  <rect width="192" height="192" fill="#0F4C91" />
+  
+  <!-- Sound wave icon centered -->
+  <g fill="#30D5F2" transform="translate(16, 16) scale(0.8)">
+    <!-- Left dot -->
+    <circle cx="140" cy="96" r="12" />
+    <!-- Right dot -->
+    <circle cx="60" cy="96" r="12" />
+    
+    <!-- Left arc waves -->
+    <path d="M 80,96 A 35,35 0 0 1 120,96" stroke="#30D5F2" stroke-width="8" fill="none" />
+    
+    <!-- Right arc waves -->
+    <path d="M 160,96 A 55,55 0 0 0 40,96" stroke="#30D5F2" stroke-width="8" fill="none" />
+    <path d="M 180,96 A 75,75 0 0 0 20,96" stroke="#30D5F2" stroke-width="6" fill="none" />
+  </g>
+</svg> 
